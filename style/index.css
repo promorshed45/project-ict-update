@@ -18,6 +18,10 @@ main{
     padding: 15px 25px;
     border-radius: 0px 15px ;
 }
+.btn-primary:hover {
+    color: white;
+    background-color: #09aff4; 
+}
 .btn-secondary {
     font-size: 1.15rem;
     font-weight: 600;
@@ -26,6 +30,11 @@ main{
     border: 2px solid #09aff4;
     padding: 15px 25px;
     border-radius: 0px 15px ;
+}
+.btn-secondary:hover {
+    color: #09aff4;
+    background-color: transparent;
+    border: 2px solid #09aff4;
 }
 .section-title{
     font-size: 3rem;
@@ -179,6 +188,17 @@ main{
 .support-image img{
     width: 100%;
 }
+
+.support-image img {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  .support-image:hover img {
+    transform: scaleX(1) rotate(10deg);
+  }
+
 .supoort-cart-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -204,10 +224,21 @@ main{
 .support-cart-icon{
     font-size: 40px;
     color: #09aff4;
-}
-.icon-bg{
-    border-radius: 7px;
     height: 40px;
     padding: 10px 15px;
+    border-radius: 7px;
     background-color: rgba(30, 177, 245, 0.2);
 }
+.icon-bg:hover i{
+    color: #0c124b;
+    border-radius: 7px;
+    background-color: #09aff4;
+  
+}
+
+
+
+.fadeIn-left{
+    left: 20%;
+  }
+  
